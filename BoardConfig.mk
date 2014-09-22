@@ -79,9 +79,20 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 # TWRP Build Flags
 BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
 DEVICE_RESOLUTION := 1080x1920
+RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_DUMLOCK := true
-TW_NO_EXFAT_FUSE := true
+#TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_BLANK := true
+
+# MultiROM config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/htc/m8/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_MUL := 2
+MR_DEVICE_HOOKS := device/htc/m8/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 1
+MR_KEXEC_MEM_MIN := 0x03200000
+MR_KEXEC_DTB := true
 
 # USB
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file
