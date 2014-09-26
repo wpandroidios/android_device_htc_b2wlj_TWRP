@@ -90,6 +90,7 @@ TW_NO_SCREEN_BLANK := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/htc/m8/mr_init_devices.c
 MR_DPI := xhdpi
+MR_DPI_FONT := 340
 MR_DEVICE_HOOKS := device/htc/m8/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
 MR_FSTAB := device/htc/m8/recovery.fstab
