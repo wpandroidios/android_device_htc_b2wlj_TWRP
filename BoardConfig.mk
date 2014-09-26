@@ -52,8 +52,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02008000 --tags_offset 0x01e00000
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02008000 --tags_offset 0x01e00000 --board mrom$(shell date -u +%Y%m%d)
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
+
 TARGET_KERNEL_CONFIG := m8_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m8gpe
 
@@ -89,9 +90,9 @@ TW_NO_SCREEN_BLANK := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/htc/m8/mr_init_devices.c
 MR_DPI := xhdpi
-MR_DPI_MUL := 2
 MR_DEVICE_HOOKS := device/htc/m8/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
+MR_FSTAB := device/htc/m8/recovery.fstab
 MR_KEXEC_MEM_MIN := 0x03200000
 MR_KEXEC_DTB := true
 
