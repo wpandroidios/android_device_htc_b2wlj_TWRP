@@ -91,7 +91,7 @@ void vendor_load_properties()
         property_set("ro.ril.enable.pre_r8fd=1", "1");
         property_set("ro.ril.enable.sdr", "0");
         property_set("ro.ril.set.mtusize", "1422");
-    } else if (strstr(bootmid, "0P6B40000")) {
+    } else if (strstr(bootmid, "0P6B64000")) {
         /* m8dugl */
         property_set("ro.build.fingerprint", "htc/htc_europe/htc_m8dug:4.4.2/KOT49H/352881.12:user/release-keys");
         property_set("ro.build.description", "1.45.401.12 CL352881 release-keys");
