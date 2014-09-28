@@ -12,8 +12,8 @@ const char *mr_init_devices[] =
 
     "/sys/class/graphics/fb0",
 
-    //gpe
     "/sys/block/mmcblk0",
+    "/sys/block/mmcblk1",
     "/sys/devices/msm_sdcc.1",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
@@ -24,22 +24,7 @@ const char *mr_init_devices[] =
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p46",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p47",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p48",
-
-
-    //sense
-    "/sys/block/mmcblk0",
-    "/sys/devices/platform/msm_sdcc.1",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p42",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p43",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p45",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p46",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p47",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p48",
-
-
+    "/sys/devices/msm_sdcc.2/mmc_host/mmc1/mmc1:e624/block/mmcblk1/mmcblk1p1",
 
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
