@@ -85,6 +85,7 @@ RECOVERY_VARIANT := multirom
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
+TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_BLANK := true
 
 # MultiROM config
