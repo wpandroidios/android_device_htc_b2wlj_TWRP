@@ -57,7 +57,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02008000 -
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
 
 TARGET_KERNEL_CONFIG := m8_defconfig
-TARGET_KERNEL_SOURCE := kernel/htc/m8gpe
+TARGET_KERNEL_SOURCE := kernel/htc/m8ul
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 274464768
