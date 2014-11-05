@@ -4,6 +4,12 @@ on early-init
 on init
     # exfat
     insmod /system/lib/modules/texfat.ko
+    # Load Mocana FIPS module. Add here since it can make sure system is mounted
+	insmod /system/lib/modules/moc_platform_mod.ko
+	insmod /system/lib/modules/moc_crypto.ko
+	insmod /system/lib/modules/dm-crypt.ko
+    # Load ecryptfs module
+    insmod /system/lib/modules/ecryptfs.ko
 
 on boot
     start choice_fn
