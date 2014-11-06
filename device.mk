@@ -32,5 +32,5 @@ PRODUCT_PACKAGES += \
     chargeled \
     init.recovery.qcom.rc \
     offmode_charging_res_images \
-    offmode_charging_warn_res_images
+    dt.img
 
