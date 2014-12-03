@@ -1,4 +1,4 @@
-on init
+on early-init
     # exfat
     insmod /system/lib/modules/texfat.ko
     # So dm-crypt tables can load
