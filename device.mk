@@ -33,5 +33,6 @@ PRODUCT_PACKAGES += \
     offmode_charging_res_images \
     offmode_charging_warn_res_images \
     dm-crypt.ko \
-    texfat.ko
+    texfat.ko \
+    dt.img
 
