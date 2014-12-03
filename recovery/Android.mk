@@ -92,7 +92,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE		:= dm-crypt.ko
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= modules/dm-crypt.ko
+LOCAL_SRC_FILES		:= kernel/modules/dm-crypt.ko
 LOCAL_MODULE_PATH	:= $(TARGET_RECOVERY_ROOT_OUT)/system/lib/modules
 include $(BUILD_PREBUILT)
 
@@ -100,6 +100,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE		:= texfat.ko
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= modules/texfat.ko
+LOCAL_SRC_FILES		:= kernel/modules/texfat.ko
 LOCAL_MODULE_PATH	:= $(TARGET_RECOVERY_ROOT_OUT)/system/lib/modules
 include $(BUILD_PREBUILT)
