@@ -49,7 +49,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3 zcache
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3 zcache androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
@@ -81,6 +81,7 @@ BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
 DEVICE_RESOLUTION := 1080x1920
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_L_CRYPTO := true
+TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_BLANK := true
 
 # USB
