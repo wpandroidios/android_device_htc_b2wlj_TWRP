@@ -1,8 +1,6 @@
 on early-init
     # exfat
     insmod /system/lib/modules/texfat.ko
-    # So dm-crypt tables can load
-    insmod /system/lib/modules/dm-crypt.ko
 
 on boot
     start choice_fn
