@@ -33,6 +33,7 @@ const char *mr_init_devices[] =
     "/sys/module/mmcblk",
 
     "/sys/devices/gpio_keys.70/input*",
+    "/sys/devices/platform/android_usb/usb_function_switch",
     "/sys/devices/virtual/input*",
     "/sys/devices/virtual/misc/uinput",
     "/sys/devices/virtual/tty/ptmx",
