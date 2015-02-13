@@ -17,6 +17,7 @@ const char *mr_init_devices[] =
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p42",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p43",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p44",
