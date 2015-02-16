@@ -3,7 +3,7 @@
  * Always enclose hooks to #if MR_DEVICE_HOOKS >= ver
  * with corresponding hook version!
  */
- 
+
 #include <stdio.h>
 #include <unistd.h>
 #include <dirent.h>
@@ -12,7 +12,7 @@
 #include <sys/stat.h>
 
 #if MR_DEVICE_HOOKS >= 1
- 
+
 int mrom_hook_after_android_mounts(const char *busybox_path, const char *base_path, int type)
 {
     // On m8, this fstab file is used to remount system to RO,
@@ -90,5 +90,20 @@ exit:
     closedir(d);
     return res;
 }
- 
+
 #endif /* MR_DEVICE_HOOKS >= 1 */
+
+#if MR_DEVICE_HOOKS >= 2
+void mrom_hook_before_fb_close(void) { }
+#endif
+
+#if MR_DEVICE_HOOKS >= 3
+void tramp_hook_before_device_init(void) { }
+#endif
+
+#if MR_DEVICE_HOOKS >= 4
+int mrom_hook_allow_incomplete_fstab(void)
+{
+    return 1;
+}
+#endif
