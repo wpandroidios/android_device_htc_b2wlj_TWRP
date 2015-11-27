@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE),m8)
+ifeq ($(TARGET_DEVICE),b2wlj)
 
 LOCAL_PATH := $(call my-dir)
 
