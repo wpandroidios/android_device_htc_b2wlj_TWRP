@@ -21,14 +21,14 @@
 # lines, full and maguro, hence its name.
 #
 
-# Inherit m8-specific vendor tree
-$(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
+# Inherit b2wlj-specific vendor tree
+$(call inherit-product-if-exists, vendor/htc/b2wlj/b2wlj-vendor.mk)
 
-# Inherit from m8
-$(call inherit-product, device/htc/m8/device.mk)
+# Inherit from b2wlj
+$(call inherit-product, device/htc/b2wlj/device.mk)
 
-PRODUCT_NAME := full_m8
-PRODUCT_DEVICE := m8
+PRODUCT_NAME := full_b2wlj
+PRODUCT_DEVICE := b2wlj
 PRODUCT_BRAND := htc
 PRODUCT_MANUFACTURER := htc
-PRODUCT_MODEL := m8
+PRODUCT_MODEL := b2wlj
