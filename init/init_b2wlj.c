@@ -78,7 +78,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.boot.mid", bootmid);
 
-    if (strstr(bootmid, "0PGA10000")) {
+    if (strstr(bootmid, "0PAG10000")) {
         cdma_properties("0", "10");
         property_set("ro.build.fingerprint", "htc/HTL23_jp_kdi/htc_b2wlj:4.4.2/KOT49H/368778.1:user/release-keys");
         property_set("ro.build.description", "1.17.970.1 CL368778 release-keys");
